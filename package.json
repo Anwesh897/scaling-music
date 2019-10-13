@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/Anwesh897/scaling-music#readme",
   "dependencies": {
+    "dotenv": "^8.1.0",
     "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
     "nodemon": "^1.19.3"
   }
 }
