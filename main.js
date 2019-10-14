@@ -5,14 +5,11 @@ const fs = require("fs");
 const path = require("path");
 const dotenv = require("dotenv").config();
 const app = express();
+// const router = express.Router();
 
 const authkey = fs.readFileSync("AuthKey_DX3S9726SR.p8").toString();
 
 app.use(express.static(path.join(__dirname, "public")));
-
-app.get("/", (req, res) => {
-  res.send("Do not go gentle into that good night");
-});
 
 ///Route for the Data which is to be displayed...!
 app.post("/scale", verifyToken, (req, res) => {
